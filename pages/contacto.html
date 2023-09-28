@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Mountain: Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/114448656a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>The Mountain</h1>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Buscar..." />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <ul class="menu">
+          <li><a href="../index.html">Incio</a></li>
+          <li><a href="alta.html">Alta</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main-form">
+      <div class="form-container">
+        <h1>¡Comunicate con nosotros!</h1>
+        <form
+          action="https://postman-echo.com/get"
+          method="get"
+          class="formulario"
+          id="formulario"
+        >
+          <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+              <input
+                type="text"
+                class="formulario__input"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              El nombre tiene que tener mínimo 3 caracteres.
+            </p>
+          </div>
+
+          <div class="formulario__grupo" id="grupo__email">
+            <label for="email" class="formulario__label">Email</label>
+            <div class="formulario__grupo-input">
+              <input
+                type="email"
+                class="formulario__input"
+                name="email"
+                id="email"
+                placeholder="correo@correo.com"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              El correo solo puede contener letras, numeros, puntos, guiones y
+              guion bajo.
+            </p>
+          </div>
+
+          <div class="formulario__grupo" id="grupo__comentarios">
+            <label for="comentarios" class="formulario__label"
+              >Comentario</label
+            >
+            <div class="formulario__grupo-input">
+              <input
+                type="text"
+                class="formulario__input"
+                name="comentarios"
+                id="comentarios"
+                placeholder="Dejanos tu comentario"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              El comentario debe tener mas de 15 caracteres.
+            </p>
+          </div>
+          <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+              <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+              Acepto los Terminos y Condiciones
+            </label>
+          </div>
+
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+              Formulario enviado exitosamente!
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-links">
+              <h4>Compañia</h4>
+              <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Nuestros servicios</a></li>
+                <li><a href="">Políticas de privacidad</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Ayuda</h4>
+              <ul>
+                <li><a href="">Preguntas</a></li>
+                <li><a href="">Compras</a></li>
+                <li><a href="">Envío</a></li>
+                <li><a href="">Pago</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Tienda</h4>
+              <ul>
+                <li><a href="">Indumentaria</a></li>
+                <li><a href="">Calzados</a></li>
+                <li><a href="">Accesorios</a></li>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Siguenos</h4>
+              <div class="social-links">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="../js/contacto.js"></script>
+  </body>
+</html>

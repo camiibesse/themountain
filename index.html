@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/114448656a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/template.js"></script>
+    <title>The Mountain: Inicio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>The Mountain</h1>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Buscar..." role="search" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Incio</a></li>
+          <li><a href="./pages/alta.html">Alta</a></li>
+          <li><a href="./pages/nosotros.html">Nosotros</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="content">
+      <h2>The Mountain: los mejores en indumentaria y accesorios</h2>
+      <p>Mira nuestro stock actualizado</p>
+      <button>Descargar</button>
+    </section>
+    <h1 class="pheading">Nuestros productos</h1>
+    <div class="wrapper">
+      <aside class="category">
+        <ul class="menu">
+          <li>
+            <button id="todos" class="boton-menu boton-categoria active">
+              Todos
+            </button>
+          </li>
+          <li>
+            <button id="camperas" class="boton-menu boton-categoria">
+              Camperas
+            </button>
+          </li>
+          <li>
+            <button id="mochilas" class="boton-menu boton-categoria">
+              Mochilas y bolsos
+            </button>
+          </li>
+          <li>
+            <button id="zapatillas" class="boton-menu boton-categoria">
+              Zapatillas y Botas
+            </button>
+          </li>
+          <li>
+            <button id="pantalones" class="boton-menu boton-categoria">
+              Pantalones
+            </button>
+          </li>
+          <li>
+            <button id="carpas" class="boton-menu boton-categoria">
+              Carpas y bolsas de dormir
+            </button>
+          </li>
+          <li>
+            <button id="accesorios" class="boton-menu boton-categoria">
+              Accesorios
+            </button>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <h2 class="titulo-principal" id="titulo-principal">
+          Todos los productos
+        </h2>
+        <div id="contenedor-productos" class="products"></div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-links">
+            <h4>Compañia</h4>
+            <ul>
+              <li><a href="">Nosotros</a></li>
+              <li><a href="">Nuestros servicios</a></li>
+              <li><a href="">Políticas de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="">Preguntas</a></li>
+              <li><a href="">Compras</a></li>
+              <li><a href="">Envío</a></li>
+              <li><a href="">Pago</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Tienda</h4>
+            <ul>
+              <li><a href="">Indumentaria</a></li>
+              <li><a href="">Calzados</a></li>
+              <li><a href="">Accesorios</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Siguenos</h4>
+            <div class="social-links">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="./js/dom.js"></script>
+  </body>
+</html>
